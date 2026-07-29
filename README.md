@@ -1,9 +1,12 @@
-# MiniShop Laravel - Phieu 06
+# MiniShop Laravel
 
-## Cai dat
+## Phiếu 07
 
-```bash
-composer install
-cp .env.example .env
-php artisan key:generate
-php artisan serve
+- [x] Blade Layout
+- [x] Sidebar dùng chung
+- [x] Active Menu
+- [x] Flash Message
+- [x] Dashboard
+- [x] Categories
+- [x] Products
+- [x] About

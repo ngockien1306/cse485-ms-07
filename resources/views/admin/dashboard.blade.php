@@ -1,29 +1,13 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <title>MiniShop Admin — Dashboard</title>
-</head>
-<body>
+@extends('layouts.admin')
 
-    <h1>MiniShop Admin — Dashboard</h1>
+@section('title','Dashboard')
 
-    <hr>
+@section('page_heading','Dashboard')
 
-    <a href="{{ route('admin.dashboard') }}">Dashboard</a> |
-    <a href="{{ route('admin.categories.index') }}">Categories</a> |
-    <a href="{{ route('admin.products.index') }}">Products</a> |
-    <a href="{{ route('admin.about') }}">About</a>
+@section('content')
 
-    <hr>
+<h2>Trang Dashboard</h2>
 
-    <h2>CORE Stats</h2>
+<p>Thống kê giả từ Phiếu 06.</p>
 
-    <p>Categories: {{ $stats['categories'] }}</p>
-
-    <p>Products: {{ $stats['products'] }}</p>
-
-    <p>Inventory Value: {{ number_format($stats['inventory_value']) }}</p>
-
-</body>
-</html>
+@endsection

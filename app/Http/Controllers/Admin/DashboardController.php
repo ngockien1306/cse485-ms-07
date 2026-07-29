@@ -8,13 +8,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $stats = [
-            'categories' => 3,
-            'products' => 8,
-            'inventory_value' => 41380000,
-        ];
-
-        return view('admin.dashboard', compact('stats'));
+        return view('admin.dashboard');
     }
 
     public function about()
